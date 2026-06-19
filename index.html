@@ -11,7 +11,6 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- ===== 상단 바 ===== -->
   <header class="topbar">
     <div class="container topbar-inner">
       <a class="brand" href="index.html" aria-label="이음책장 홈">
@@ -27,12 +26,11 @@
     </div>
   </header>
 
-  <!-- ===== 히어로 ===== -->
   <section class="hero">
     <div class="container hero-inner">
       <div class="hero-text">
         <p class="eyebrow">동국대학교사범대학부속영석고등학교 학생들을 위한 독서 가이드북</p>
-        <h1>책 한 권이<br /><span class="hl">진로를 여는 첫 문장</span>이 된다</h1>
+        <h1>교과에서 진로까지,<br /><span class="hl">한 권의 책</span>이 길이 됩니다</h1>
         <p class="lede">관심 교과와 진로에 맞는 책을 찾아보세요.</p>
 
         <div class="hero-search">
@@ -47,25 +45,22 @@
 
         <div class="hero-stats">
           <div class="stat"><div class="num" id="statBooks">–</div><div class="lbl">추천 도서</div></div>
-          <div class="stat"><div class="num" id="statFields">–</div><div class="lbl">진학 계열</div></div>
           <div class="stat"><div class="num" id="statSubjects">–</div><div class="lbl">연계 교과</div></div>
+          <div class="stat"><div class="num" id="statFields">–</div><div class="lbl">진학 계열</div></div>
           <div class="stat"><div class="num" id="statTags">–</div><div class="lbl">세부 진로</div></div>
         </div>
       </div>
 
       <div class="hero-art" aria-hidden="true">
         <svg viewBox="0 0 360 300" xmlns="http://www.w3.org/2000/svg">
-          <!-- 책 더미 -->
           <rect x="60" y="232" width="240" height="20" rx="4" fill="#1c2942"/>
           <rect x="74" y="210" width="212" height="22" rx="4" fill="#c79a45"/>
           <rect x="64" y="188" width="232" height="22" rx="4" fill="#3a5a92"/>
-          <!-- 펼쳐진 책 -->
           <path d="M180 70 C150 52 96 52 70 66 L70 178 C96 164 150 164 180 182 Z" fill="#fdfaf2" stroke="#d8cfae" stroke-width="2"/>
           <path d="M180 70 C210 52 264 52 290 66 L290 178 C264 164 210 164 180 182 Z" fill="#fbf6ea" stroke="#d8cfae" stroke-width="2"/>
           <path d="M180 70 L180 182" stroke="#c9bf9c" stroke-width="2"/>
           <path d="M86 84h74M86 98h74M86 112h66" stroke="#b9c2d6" stroke-width="3" stroke-linecap="round"/>
           <path d="M200 84h74M200 98h74M200 112h66" stroke="#cdb98a" stroke-width="3" stroke-linecap="round"/>
-          <!-- 빛나는 별/북극성 -->
           <g transform="translate(250 56)">
             <path d="M0 -16 L4 -4 L16 0 L4 4 L0 16 L-4 4 L-16 0 L-4 -4 Z" fill="#ffd97a"/>
           </g>
@@ -75,7 +70,6 @@
   </section>
 
   <main class="container">
-    <!-- ===== 툴바 ===== -->
     <div class="toolbar">
       <div class="result-count" id="resultCount">불러오는 중…</div>
       <div class="toolbar-right">
@@ -93,7 +87,6 @@
       </div>
     </div>
 
-    <!-- ===== 필터 (옵션은 script.js가 자동 생성) ===== -->
     <section class="filters" id="filters" aria-label="도서 필터">
       <div class="filter-group">
         <h4>교과</h4>
@@ -113,22 +106,19 @@
       </div>
     </section>
 
-    <!-- ===== 카드 목록 ===== -->
     <section id="bookGrid" class="book-grid" aria-live="polite"></section>
     <p id="emptyMsg" class="empty-msg" hidden>조건에 맞는 도서가 없습니다. 검색어나 필터를 조정해 보세요.</p>
   </main>
 
-  <!-- ===== 푸터 ===== -->
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p class="credit">제작 · 동국대학교사범대학부속영석고등학교 김건우</p>
+      <p class="credit">제작 · 동국대학교사범대학부속영석고등학교 3학년부</p>
       <p>이음책장 — 교과와 진로를 잇는 진로독서 라이브러리. 읽고, 탐구하고, 연결하세요.</p>
-      <p class="src">참고 자료: 경상남도교육청 권장도서목록, 전국국어교사모임 물꼬방 추천도서, 캠퍼스멘토 교과세특 추천도서 등 / 분류 기준: 대입정보포털 어디가 · 커리어넷 · 워크넷 학과정보 · College Board BigFuture · O*NET · UCAS (학생 눈높이로 재구성).</p>
+      <p class="src">참고 자료: 경상남도교육청 학교도서관 권장도서목록 · 서울대학교 권장도서 100선 · 포스텍 권장도서 100선 등</p>
     </div>
   </footer>
 
   <button id="topBtn" class="top-btn" type="button" aria-label="맨 위로">↑</button>
-
   <script src="script.js"></script>
 </body>
 </html>
